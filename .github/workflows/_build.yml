@@ -154,7 +154,7 @@ jobs:
           subject-path: 'ffmpeg-${{ matrix.platform }}-${{ matrix.license }}.tar.gz'
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ffmpeg-${{ matrix.platform }}-${{ matrix.license }}
           path: |
