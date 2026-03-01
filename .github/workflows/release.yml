@@ -183,7 +183,7 @@ jobs:
           echo "All 10 artifacts verified"
 
       - name: Generate attestations
-        uses: actions/attest-build-provenance@v3
+        uses: actions/attest-build-provenance@v4
         with:
           subject-path: 'artifacts/*.tar.gz'
 
