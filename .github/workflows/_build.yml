@@ -61,7 +61,7 @@ jobs:
       # QEMU setup for ARM64 cross-compilation on Linux
       - name: Set up QEMU
         if: matrix.platform == 'linux-arm64'
-        uses: docker/setup-qemu-action@v3
+        uses: docker/setup-qemu-action@v4
         with:
           platforms: arm64
 
